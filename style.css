@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container::before {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background: url('/cool-background.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.weather {
+    z-index: 2;
+    color: white;
+    display: flex;
+}
+
+.weather>div {
+    margin: 0.625rem;
+}
+
+.weather1 {
+    font-size: 4rem;
+}
+
+ /* .weather2 p {
+    font-size: 2rem;
+} */
+.weather span {
+    font-size: 0.75rem;
+} 
+.weather3 img {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+}
+.weather3 span {
+    display: flex;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+nav {
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    background-color: rgb(255, 255, 155, 0.02);
+    left: 10%;
+    border-radius: 50px 50px 0 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+#search {
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    border-bottom: 2px solid rgb(117, 84, 84);
+}
+
+#search:hover {
+    background-color: rgb(255, 255, 155, 0.112);
+    border-bottom: 2px solid rgb(117, 84, 84);
+}
+
+#btn {
+    height: 40px;
+    width: 9%;
+    text-align: center;
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0 25px 25px 0;
+    color: rgb(225, 225, 225);
+    font-size: 1rem;
+    font-weight: bolder;
+    text-align: center;
+}
+
+#btn:hover {
+    background-color: rgba(183, 183, 17, 0.4);
+    border-radius: 0 25px 25px 0;
+}
+
